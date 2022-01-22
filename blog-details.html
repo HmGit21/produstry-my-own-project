@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produstry-blog-details</title>
+
+    <!-- css property are here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;800&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+     <!-- header start here -->
+     <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 header-item1">
+                    <h6><span><i class="fas fa-map-marker-alt"></i></span> 1234, Park Street, New York, America</h6>
+                </div>
+                <div class="col-lg-6 header-item2 text-center">
+                    <h6>Welcome to PRODUSTRY</h6>
+                </div>
+                <div class="col-lg-3 header-item3">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+
+    <!-- navigation start here -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+            <img src="img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+          <span><i class="fas fa-align-right"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link"  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="about us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link "  href="#">Our Blog</a>
+              <!-- dropdown menu -->
+              <ul class="My_dropdown">
+                <li><a class="Mydropdown-item" href="blog-list-view.html">Blog list view</a></li>
+                <li><a class="Mydropdown-item" href="blog-details.html">Blog details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <span class="d-none d-lg-block"><i class="fas fa-align-right toggle"></i></span>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation start here -->
+
+
+      <!-- breadcum pagination -->
+    <section id="pagination">
+      <div class="container">
+          <div class="row align-items-center">
+            <div class="pagination_content">
+              <h2>About Us</h2>
+              <nav>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home  <i class="fas fa-chevron-right"></i></a></li>
+                  <li class="breadcrumb-item"><a href="about us.html">About Us  <i class="fas fa-chevron-right"></i></a></li>
+                  <li class="breadcrumb-item"><a href="portfolio.html">Portfolio  <i class="fas fa-chevron-right"></i></a></li>
+                  <li class="breadcrumb-item"><a href="blog-list-view.html">Blog List View  <i class="fas fa-chevron-right"></i></a></li>
+                  <li class="breadcrumb-item active" aria-current="page"><a href="blog-list-view.html">Blog Details</a></li>
+                </ol>
+              </nav>
+           </div>
+          </div>
+      </div>
+    </section>
+    <!-- breadcum pagination -->
+
+    <!-- settings menu section start -->
+    <div id="setting_menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+           <div class="list_box">
+              <span class="active"><i class="fas fa-th"></i></span>
+              <span><i class="fas fa-list"></i></span>
+           </div>
+          </div>
+          <div class="col-md-3">
+            <div class="list_box2">
+              <div class="selectBox1">
+                <label for="name">Short By</label>
+                <select name="name" id="name">
+                  <option value="">Name</option>
+                  <option value="">Address</option>
+                  <option value="">Phone</option>
+                </select>
+              </div>
+
+              <div class="selectBox2">
+                <label for="showing">showing</label>
+              <select name="showing" id="showing">
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+              </select>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pages">
+              <div class="selectLeftBox">
+                <label for="page">Pages</label>
+                <span>01</span>
+                <span>02</span>
+                <span>03</span>
+                <span>.</span>
+              </div>
+  
+              <div class="selectLeftBox2">
+                <label for="year">Of</label>
+                <span class="yr">2017</span>
+                <span><i class="fas fa-caret-right"></i></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- settings menu section start -->
+
+    <!-- blog details start here -->
+    <section id="blog_details">
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 main_content">
+             <div class="main_cntImgbox">
+                <img src="img/Blog_Details_Page.jpg" alt="">
+             </div>
+             <div class="main_cntBox">
+               <h4>Finding New Buildings in the Dust of the Old Never Seen Before</h4>
+               <div class="row">
+                 <div class="col-6">
+                  <a href="#"><span><i class="fas fa-user"></i> By: Admin</span></a>
+                 </div>
+                 <div class="col-6">
+                   <a href="#"><span><i class="fas fa-thumbs-up"></i> 2.5k Likes</span>   <span><i class="fas fa-comments"></i> 1.5k Comments</span></a>
+                 </div>
+               </div>
+
+               <div class=" mt-md-4 mt-2">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrabled it to make a typeen book. It has survived not only five centuries, but also the leap into electronicting. Lorem Ipsum is simply dummy xt of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrabled it to make a typeen book. It has survived not only five centuries, but also the leap into electroing. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <br>
+                  <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrabled it to make a typeen book. It has survived not only five centuries, but also the leap into electronicting. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+                <blockquote class="blockquote mt-3">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                </blockquote>
+
+                <div class="mt-md-4 mt-3">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrabled it to make a typeen book. It has survived not only five centuries, but also the leap into electronicting. Lorem Ipsum is simply dummyext of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsumas been the duy's stadard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrabled it to make a typeen book. It has survived not only five centuries, but also the leap into electroing. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+             </div> <!-- main_cntBox -->
+             <!-- comment box -->
+             <div class="comment_box">
+               <div class="comment_heading">
+                <h5 class="text-secondary">Comments</h5>
+               </div>
+               <div class="row commenter align-items-center">
+                 <div class="col-md-2 cmnt_img">
+                   <img src="img/commenter1.jpg" alt="">
+                 </div>
+                 <div class="col-md-10 cmnt_content">
+                   <div class="row">
+                      <div class="col-md-7"><h6>Mehadi Tahsan</h6></div>
+                      <div class="col-md-5"><span>Posted on: 26 October 2017</span></div>
+                   </div>
+                   <p>hen after before symphony book.Lorem Ipsum has beenry's staardummy text ever since the.Lom Ipsum is simply dummy text of thenting  and we typng industry.</p>
+                   <span class="reply"><i class="fas fa-reply-all"></i> Reply</span> 
+                  </div>
+                   <!-- replyer -->
+                   <div class="col-12">
+                    <div class="row replyer align-items-center">
+                      <div class="col-md-2 cmnt_img">
+                        <img src="img/commenter2.jpg" alt="">
+                      </div>
+                      <div class="col-md-10 cmnt_content">
+                        <div class="row">
+                           <div class="col-md-6"><h6>Md. Ikbal Ahmed</h6></div>
+                           <div class="col-md-6"><span>Posted on: 26 October 2017</span></div>
+                        </div>
+                        <p>hen after before symphony book.Lorem Ipsum has beenry's staardummy text ever since the.Lom Ipsum is simply dummy text of thenting  and we typng industry.</p>
+                        <span><i class="fas fa-reply-all"></i> Reply</span>
+                       </div>
+                    </div>
+                   </div>
+                   <!-- replyer end -->
+               </div>
+
+               <div class="row commenter align-items-center">
+                  <div class="col-md-2 cmnt_img">
+                      <img src="img/commenter3.jpg" alt="">
+                  </div>
+                 <div class="col-md-10 cmnt_content">
+                    <div class="row">
+                      <div class="col-md-7"><h6>Mehadi Tahsan</h6></div>
+                      <div class="col-md-5"><span>Posted on: 26 October 2017</span></div>
+                    </div>
+                    <p>hen after before symphony book.Lorem Ipsum has beenry's staardummy text ever since the.Lom Ipsum is simply dummy text of thenting  and we typng industry.</p>
+                    <span><i class="fas fa-reply-all"></i> Reply</span> 
+                  </div>
+                </div>
+                <a href="#" class="text-secondary">More comment....</a>
+             </div>
+             <!-- comment box end -->
+             <div id="reply_box">
+              <h3>Leave a reply</h3>
+                <form action="menthod">
+                    <div class="input_box">
+                      <input type="text" id="name" placeholder="Name">
+                      <input type="email" id="email" placeholder="E-mail">
+                    </div>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+             </div>
+           </div>
+           <!-- sidebar blog details start here -->
+           <div id="sidebar" class="col-lg-4 sidebar">
+                <div class="form_box">
+                    <form action="method">
+                        <input type="text" id="name" placeholder="Type Your Keyword" class="w-100 p-2">
+                    </form>
+                </div>
+                <div class="news_box">
+                  <div class="news_menu">
+                    <ul>
+                      <li><a href="#" class="active">Populer</a></li>
+                      <li><a href="#">Recent</a></li>
+                      <li><a href="#">Latest</a></li>
+                    </ul>
+                  </div>
+                  <div class="news_content">
+                        <div class="news_cntImg">
+                          <img src="img/news_item1.jpg" alt="">
+                          <div class="news_overlay">
+                              <span><i class="fas fa-link"></i></span>
+                          </div>
+                        </div>
+                        <div class="nesw_body">
+                          <p>Best Contructory Ever, You’ll be</p>
+                          <p>Apriciate</p>
+                          <a href="#"><span><i class="fas fa-thumbs-up"></i> 2.5k Likes</span>   <span class="ms-3"><i class="fas fa-comments"></i> 1.5k Comments</span></a>
+                        </div>
+                  </div>
+                  <div class="news_content">
+                        <div class="news_cntImg">
+                          <img src="img/news_item2.jpg" alt="">
+                          <div class="news_overlay">
+                              <span><i class="fas fa-link"></i></span>
+                          </div>
+                        </div>
+                        <div class="nesw_body">
+                          <p>Produstry is the qualityful Industry</p>
+                          <p>of Construction</p>
+                          <a href="#"><span><i class="fas fa-thumbs-up"></i> 2.5k Likes</span>   <span class="ms-3"><i class="fas fa-comments"></i> 1.5k Comments</span></a>
+                        </div>
+                  </div>
+                  <div class="news_content">
+                        <div class="news_cntImg">
+                          <img src="img/news_item3.jpg" alt="">
+                          <div class="news_overlay">
+                              <span><i class="fas fa-link"></i></span>
+                          </div>
+                        </div>
+                        <div class="nesw_body">
+                          <p>You’ll never be Demotivated with</p>
+                          <p>Our Work</p>
+                          <a href="#"><span><i class="fas fa-thumbs-up"></i> 2.5k Likes</span>   <span class="ms-3"><i class="fas fa-comments"></i> 1.5k Comments</span></a>
+                        </div>
+                  </div>
+                </div> <!-- end nwes box -->
+                <!-- categories start -->
+                  <div id="categories">
+                    <h4>Categories</h4>
+                    <div class="category_menu">
+                        <ul>
+                          <li>
+                            <div class="category_item">
+                              <div class="category_name">Construction</div>
+                              <div class="category_number">13</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="category_item">
+                              <div class="category_name">Industry</div>
+                              <div class="category_number">23</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="category_item">
+                              <div class="category_name">Contructor</div>
+                              <div class="category_number">33</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="category_item">
+                              <div class="category_name">Production</div>
+                              <div class="category_number">43</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="category_item">
+                              <div class="category_name">Company</div>
+                              <div class="category_number">53</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="category_item">
+                              <div class="category_name">Builders</div>
+                              <div class="category_number">63</div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="category_item">
+                              <div class="category_name">Building</div>
+                              <div class="category_number">73</div>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                <!-- categories end -->
+                <!-- tags start -->
+                <div id="tag">
+                  <h4>Tags</h4>
+                  <span>Industry</span> <span>Construction</span> <span>Building</span> <span>Company</span> <span>Architect</span> <span>Architecter</span> <span>Builders</span> <span>Contractor</span>
+                </div>
+                <!-- tags end -->
+                <!-- blog details video start -->
+                  <div id="blog_video">
+                    <div class="video_item">
+                        <img src="img/blog-dtails-vdo.jpg" alt="">
+                        <div class="play_btn">
+                          <img src="img/play-btn.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+                <!-- blog details video end -->
+                <div id="sidebar_close">
+                   <div class="sidebar_closeItem">
+                      <span><i class="fas fa-times"></i></span>
+                   </div>
+                </div>
+           </div><!-- sidebar blog details end here -->
+           
+           
+        </div>
+      </div>
+    </section>
+    <!-- blog details start here -->
+
+    <!-- sidebar button -->
+    <div id="sidebar_btn">
+       <div class="sidebar_btn_item">
+           <span> <i class="fas fa-outdent"></i></span>
+       </div>
+    </div>
+
+   <!-- footer start here -->
+   <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer_header">
+            <img src="img/footer_logo.png" alt="">
+          </div>
+          <div class="footer_content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+              unknown printer took a galley of type and scrambled it to make a type.</p>
+              <div class="sci">
+                <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer_header">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="footer_content">
+              <div class="sci_middle">
+                <ul>
+                  <li><i class="fas fa-map-marker-alt"></i> <span>1234, Park Street Avenue, NewYork City North America.</span></li>
+                  <li><i class="fas fa-phone-alt"></i> <span>(+880) 123 4567 890 <br>
+                    (+880) 098 7654 321</span></li>
+                  <li><i class="fas fa-envelope"></i> <span>produstry.industry@gmail.com <br>
+                    industry.produstry@gmail.com</span></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer_header">
+            <h2>Important Links</h2>
+          </div>
+          <div class="footer_content">
+              <div class="sci_middle2">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about us.html">About US</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Testimonial</a></li>
+                  <li><a href="#">Our Blogs</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer_header">
+            <h2>Latest News</h2>
+          </div>
+          <div class="footer_content">
+              <div class="right_content">
+                <ul>
+                  <li>
+                    <img src="img/latest_img.jpg" alt="">
+                    <div>
+                      <span>Nice Newest Construction Factory Work</span><br>
+                      <span>26 October 2017</span>
+                      <br> <br>
+                      <a href="#"><span><i class="fas fa-user"></i> By: Admin </span>    <span><i class="fas fa-thumbs-up"></i> 2.5k Likes</span>   <span><i class="fas fa-comments"></i> 1.5k Comments</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="right_content mt-4">
+                <ul>
+                  <li>
+                    <img src="img/latest_img2.jpg" alt="">
+                    <div>
+                      <span>Nice Newest Construction Factory Work</span><br>
+                      <span>26 October 2017</span>
+                      <br> <br>
+                      <a href="#"><span><i class="fas fa-user"></i> By: Admin </span>    <span><i class="fas fa-thumbs-up"></i> 2.5k Likes</span>   <span><i class="fas fa-comments"></i> 1.5k Comments</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer_bottom">
+    <div class="container">
+      <p>Copyright &copy; 2017. All right reserved by <span>PRODUSTRY</span></p>
+    </div>
+  </div>
+  <!-- footer ends here -->
+  <!-- back to top button -->
+  <div id="back_top">
+    <span><i class="fas fa-chevron-up"></i></span>
+  </div>
+  <!-- back to top button -->
+  
+  <!-- core js are here -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
